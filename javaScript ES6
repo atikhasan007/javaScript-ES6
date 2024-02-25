@@ -1,0 +1,480 @@
+//ES6
+
+// "use strict";
+// function Myname(){
+//     name = 'atik';
+// }
+// // Myname();
+
+
+//spread Operoter
+
+// let poorCounty = ['Bnagladesh','sirilanka'];
+// console.log(poorCounty);
+// let richCountry = ['China','Canada','America'];
+// console.log(richCountry);
+// let r = [...poorCounty,'china','canada','america'];
+// console.log(r);
+
+
+//without using spread operoter
+
+// let poorCounty = ['Bnagladesh','sirilanka'];
+//  console.log(poorCounty);
+//  let richCountry = ['China','Canada','America'];
+//  console.log(richCountry);
+
+//  richCountry.push(poorCounty);
+//  console.log(richCountry);
+
+//Rest parameter
+//mani parameter hole rest parameter hobe akdom last a 
+// function Calculation(...numbers) {
+//     let sum = 0;
+//     for(let i of numbers){
+//         sum = sum + i;
+//     }
+//     console.log(sum);
+
+// }
+
+// Calculation(1,2,3,4,5);
+
+
+
+
+// function Calculation(a, b, ...numbers){
+//     let sum = 0;
+//     for(let i of numbers){
+//         sum+=i;
+//     }
+//     console.log(sum);
+// }
+// Calculation(10,30,1,2,3,4);
+
+
+//Dynamic function
+//function by using the function constructor 
+
+// var name = function(naemValue){
+//     return naemValue;
+// }
+// console.log(name('aitk'));
+
+
+
+//variable
+// var = reassigned and redecalr
+// let = reassigned but can not redecalr
+// const = can not reassigned and can not redecalr
+
+//variable scope
+//golabal 
+//local
+
+//variable Hoistion
+
+//value assign
+//declare
+
+// name = 'atik'; //age value assigned 
+// console.log(name);
+// var name;//but declar korechi pore 
+
+
+//simle for each loop 
+//the for---of loop'
+// var nameArray = ['kamal','rofik','korim','faruk'];
+// for(let oneName of nameArray){
+//     console.log(oneName);
+// }
+
+
+//object
+
+// var billGAtes = {
+//     shirt: true,
+//     shirtColor:"red",
+//     smile: true,
+//     swatter:true,
+//     swatterColor:"gray",
+//     chosma: true
+// }
+
+//console.log(billGAtes['shirtColor']);
+
+///object nexting
+// var  billgaespro = {
+//     shirt : {
+//         color : "offWhite",
+//         Quality : "good",
+//         price : "2000$"
+//     },
+
+//     swatter: {
+//         color:"gray",
+//         Quality : "good",
+//         price :"3333$",
+//         warm : "best"
+        
+//     },
+//     face :{
+//         similing :"yes",
+//         shosma :"yes",
+//         teeth:"white, big"
+//     }
+// }
+
+// console.log(billgaespro['swatter']['price']);
+
+
+
+
+//for in loop
+//props means property
+
+// for(let props in billGAtes){
+// console.log(props +": " + billGAtes[props]);
+// }
+
+
+//decision making
+//if , else, switch
+// if(billGAtes['shirtColor']=="red"){
+//     console.log("Shirt color is Red");
+// }
+// else{
+//     console.log("shirt color is not red");
+// }
+
+
+//function
+//simple function
+
+// function myName(x,y){
+//     //var x = 10;
+//     //var y = 10;
+//     var z = x + y;
+//     console.log(z);
+// }
+//myName(10,20);//function call
+
+//parameterized function
+//rest parameters//as like array 
+
+// function something (...x){
+//   console.log(x[6]);
+// }
+
+// something(1,2,3,4,5,6,"A","B","C");
+
+
+//function return type
+// function funOne(){
+//    return 20;
+
+// }
+// function funTwo(){
+//     return funOne();
+// }
+// let ans = funOne();
+// let ans1 = funTwo();
+// console.log(ans+ans1);
+
+//Anonymous function 
+
+// A function without a name
+// it can be declared dynamically at runtime
+//an anonymous function can be assigned within a variable .
+//reassigned kora jay
+
+// var myFun = function(){
+    
+//     return "hello";
+
+
+//  }
+ //reassigned
+
+//  var myFun = function(){
+    
+//     return "aitk";
+
+
+//  }
+
+//  console.log(myFun());
+
+
+
+
+// Arror function 
+//To write smaller function syntax.
+//Arrow function make your code more readable and strucutred. 
+//arrow function are anonymous functions 
+///arror function can not be used as the constructors .
+
+// var myArrow = (x)=>{
+// console.log(x);
+
+// }
+// myArrow("hello");
+
+
+
+// var myArrow = (...x)=>{
+//     console.log(x);
+    
+//     }
+//     myArrow(1,3,4,"hello");
+//as a annonums function hisabe return korte pare 
+
+
+// var myArrow = (x)=>{
+//     return "hello";
+    
+//     }
+//     myArrow(myArrow());
+
+
+//array 
+// var myArray = ["a","b","c","d","e"];
+
+// var myArrayPro = new Array("a","b","c","d","e");
+// console.log(myArray[1]);
+
+// for(let item of myArrayPro){
+
+//     console.log(item);
+// }
+
+
+//multidimentionl array 
+// var Bnagladesh = ["Dhaka","Rangpur","ctg"];
+// var India = ["mumbai","Chennai","kolkata"];
+// var China = ["uhan","Shanghai","hongkong"];
+
+// var asia = [ Bnagladesh, India, China];
+// console.log(asia[1][2]);
+
+//array de-strycturing
+
+// var countries = ["Ban","ind","cana",'pak'];
+// var[a,,,b]=countries  //expresion
+// console.log(a);
+// console.log(b);
+
+//map map is a collection of data 
+
+// var myMap = new Map();
+// myMap.set('key1', 'Bangladesh');
+// myMap.set('key2',"India");
+// myMap.set('key3','China');
+// myMap.set('key4','maldip');
+// myMap.set('key5','Amirica');
+
+//console.log(myMap.keys());
+// for(let myKey of myMap.keys()){
+//     console.log(myKey);
+// }
+
+
+//delet(key)
+//get(key)
+//clear()
+//has(key)
+
+// myMap.delete('key1');
+// myMap.delete('key2');
+ //myMap.clear();
+
+
+// for(let myvalues of myMap.values()){
+//     console.log(myvalues);
+// }
+
+
+//console.log(myMap.get('key4'));
+
+// if(myMap.has("key6")){
+//     console.log("yes");
+// }
+// else{
+//     console.log("no");
+// }
+
+
+
+// var mySet = new Set();
+
+// mySet.add('Bangladesh');
+// mySet.add('India');
+// mySet.add('Nepal');
+// mySet.add('Bhutan');
+// mySet.add('maldiv');
+// mySet.add('china');
+
+// console.log(mySet);
+
+
+
+// .clear();
+// .delete(value);
+// .has(value);
+// .values();
+// .Setsize
+
+
+//class
+//  class MyClass{
+
+    
+    
+
+//      Myfun() {
+//         console.log('Hello , I am from class function inside class');
+//     }
+
+//      Myfun1() {
+//         console.log('Hello , I am from class function  one inside class');
+//     }
+
+//      Myfun2() {
+//         console.log('Hello , I am from class function  two  inside class');
+//     }
+
+//      Myfun3() {
+//         console.log('Hello , I am from class function  three inside class');
+//     }
+
+
+
+//  }
+
+
+//  var obj = new MyClass;
+
+
+ 
+// class MyClass{
+
+//     constructor(a,b){
+//         this.firstNum  = a;
+//         this.secondNum = b;
+
+//     }
+
+
+//     add(){
+//      let result =    this.firstNum + this.secondNum;
+//      console.log(result);
+//     }
+
+// }
+
+// var obn = new MyClass(10,20);
+// obn.add();
+
+
+//static keyword 
+
+// class Myclass{
+
+//    static hello(){
+// console.log("hello");
+//     }
+// }
+
+// Myclass.hello();
+
+// class inheritance 
+
+
+// class parent{
+
+
+//     hello1(params){
+//       console.log("hello 1 function ");
+//     }
+
+
+//     hello2(params){
+//         console.log("hello 2 function ");
+//     }
+
+
+
+
+
+// }
+
+// class child extends parent{
+
+
+
+
+// }
+
+// var obj = new child();
+// obj.hello1();
+// obj.hello2();
+
+
+
+///super keyword 
+
+
+
+
+// class parent{
+
+// func(params) {
+//     console.log("hello");
+    
+// }
+
+
+// }
+
+// class child extends parent{
+  
+//    demo(){
+//     super.func();
+//    }
+
+
+// }
+
+
+// var obj = new child;
+// obj.demo();
+
+
+
+
+///es6 module 
+
+// Es6 module export - es6 module import
+// modules make it easy to maintain the code 
+// debug the cod elsereuse the piece of code 
+
+//export amdani
+
+// class export
+// function export
+// variable export
+
+
+// ///import roptani
+// class import
+// function import
+// variable import
+
+
+// .nameed : Export-Import By Using Same NamedNodeMap
+// .Default : Export - import by Using Any  Name
+
+
+
+
+
